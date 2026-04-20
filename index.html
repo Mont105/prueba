@@ -26,7 +26,7 @@
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </nav>
 
@@ -292,6 +292,87 @@
         </section>
 
     </main>
+
+    <!-- seccion de contacto -->
+    <section class="seccion-contacto" id="contacto">
+        <div class="contacto-encabezado">
+            <h2 class="contacto-titulo">Contacto</h2>
+            <p class="contacto-subtitulo">Envíame un mensaje</p>
+        </div>
+
+        <div class="contacto-contenido">
+            <form class="formulario-contacto" action="#" method="post">
+                <div class="formulario-fila">
+                    <div class="formulario-grupo">
+                        <label for="nombre" class="formulario-etiqueta">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" class="formulario-campo" placeholder="Tu nombre"
+                            required minlength="2">
+                    </div>
+                    <div class="formulario-grupo">
+                        <label for="email" class="formulario-etiqueta">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="formulario-campo" placeholder="tu@email.com"
+                            required>
+                    </div>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="asunto" class="formulario-etiqueta">Asunto</label>
+                    <select id="asunto" name="asunto" class="formulario-campo" required>
+                        <option value="" disabled selected>Selecciona un asunto</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="mensaje" class="formulario-etiqueta">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" class="formulario-campo formulario-textarea"
+                        placeholder="Escribe tu mensaje aquí..." required minlength="10"></textarea>
+                </div>
+
+                <button type="submit" class="formulario-boton">Enviar mensaje</button>
+            </form>
+
+            <!-- tarjeta de informacion de contacto -->
+            <aside class="contacto-info">
+                <h3 class="contacto-info-titulo">Información de contacto</h3>
+                <ul class="contacto-lista">
+                    <li class="contacto-item">
+                        <span class="contacto-icono">📧</span>
+                        <span>victor.munoz148@inacapmail.cl</span>
+                    </li>
+                    <li class="contacto-item">
+                        <span class="contacto-icono">📍</span>
+                        <span>Concepción, Chile</span>
+                    </li>
+                    <li class="contacto-item">
+                        <span class="contacto-icono">💻</span>
+                        <a href="https://github.com/Mont105" class="contacto-enlace">github.com/Mont105</a>
+                    </li>
+                    <li class="contacto-item">
+                        <span class="contacto-icono">📱</span>
+                        <span>+56921820361</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- pie de pagina -->
+    <footer class="pie-pagina">
+        <div class="pie-contenido">
+            <div class="pie-izquierda">
+                <span class="pie-iniciales">VM</span>
+                <span class="pie-nombre">Victor Muñoz</span>
+            </div>
+            <div class="pie-redes">
+                <a href="https://github.com/Mont105" class="pie-red-enlace">GH</a>
+            </div>
+        </div>
+        <p class="pie-copyright">&copy; 2026 Victor Muñoz. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 
