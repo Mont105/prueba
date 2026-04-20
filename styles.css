@@ -466,3 +466,155 @@
         max-width: 120px;
     }
 }
+
+/* seccion de proyectos */
+.seccion-proyectos {
+    padding: 70px 50px 60px;
+    background: linear-gradient(160deg, #1a1a3e 0%, #0f0c29 100%);
+    color: #e0e0e0;
+}
+
+.proyectos-encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.proyectos-titulo {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.proyectos-subtitulo {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #9d9dbb;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta-proyecto {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.proyecto-figura {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.proyecto-imagen {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-1 {
+    background: linear-gradient(135deg, #7158e2, #3d2a91);
+}
+
+.placeholder-2 {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+}
+
+.placeholder-3 {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+}
+
+.placeholder-4 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.placeholder-5 {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.placeholder-6 {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+}
+
+.emoji-icono {
+    font-size: 48px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.proyecto-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.proyecto-categoria {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #aeb2cc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.proyecto-nombre {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.proyecto-descripcion {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #c0c0d8;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.proyecto-enlace {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c9a0ff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+    align-self: flex-start;
+}
+
+.proyecto-enlace:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .seccion-proyectos {
+        padding: 50px 16px 40px;
+    }
+
+    .contenedor-proyectos {
+        grid-template-columns: 1fr;
+    }
+}
