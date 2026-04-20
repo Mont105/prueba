@@ -24,7 +24,7 @@
         </div>
         <div class="navlinks">
             <a href="#sobre-mi">Sobre mí</a>
-            <a href="#">Habilidades</a>
+            <a href="#habilidades">Habilidades</a>
             <a href="#">Proyectos</a>
             <a href="#">Contacto</a>
         </div>
@@ -44,11 +44,11 @@
             <img src="images/io.jpeg">
         </div>
     </section>
+    <!-- sobre mi info + datos personales-->
     <section class="sobre-mi" id="sobre-mi">
         <div class="sobre-mi-header">
             <h2 class="sobre-mi-titulo">Sobre Mí</h2>
         </div>
-
         <div class="sobre-mi-contenido">
             <article class="sobre-mi-bio">
                 <p>
@@ -79,7 +79,101 @@
             </aside>
         </div>
     </section>
+    <!-- tablas y graficos -->
+    <section class="seccion-habilidades" id="habilidades">
+        <div class="habilidades-encabezado">
+            <h2 class="habilidades-titulo">Habilidades</h2>
+            <p class="habilidades-subtitulo">Tecnologías y competencias</p>
+        </div>
+        <div class="contenedor-tabla">
+            <table class="tabla-tecnologias">
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Dominio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML 5</td>
+                        <td>Básico</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno" style="width: 25%;" data-nivel="25"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Medio</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno" style="width: 50%;" data-nivel="50"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GO</td>
+                        <td>Avanzado</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno barra-avanzado" style="width: 90%;" data-nivel="90">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>Medio</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno" style="width: 50%;" data-nivel="50"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Git/GitHub</td>
+                        <td>Medio</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno" style="width: 50%;" data-nivel="50"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Medio</td>
+                        <td>
+                            <div class="barra-nivel">
+                                <div class="barra-nivel-relleno" style="width: 50%;" data-nivel="50"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta-competencias">
+                <h3 class="tarjeta-titulo">Competencias Técnicas</h3>
+                <ul class="lista-competencias">
+                    <li>Desarrollo de microservicios con Go y gRPC</li>
+                    <li>Automatización de infraestructura con Python y scripting</li>
+                    <li>Programación de sistemas concurrentes en Rust</li>
+                    <li>Diseño de APIs RESTful y manejo de bases de datos SQL</li>
+                </ul>
+            </div>
+            <div class="tarjeta-ruta">
+                <h3 class="tarjeta-titulo">Ruta de Aprendizaje</h3>
+                <ol class="lista-ruta">
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                </ol>
+            </div>
 
+        </div>
+
+    </section>
 </body>
 
 </html>

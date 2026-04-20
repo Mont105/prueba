@@ -219,3 +219,250 @@
     color: #2c3e50;
     font-weight: 700;
 }
+
+/* tablas y graficos */
+.seccion-habilidades {
+    padding: 70px 50px 60px;
+    background: linear-gradient(160deg, #0f0c29 0%, #1a1a3e 40%, #24243e 100%);
+    color: #e0e0e0;
+}
+
+.habilidades-encabezado {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.habilidades-titulo {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.habilidades-subtitulo {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #9d9dbb;
+    letter-spacing: 0.5px;
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-bottom: 44px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+.tabla-tecnologias {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Open Sans", sans-serif;
+}
+
+.tabla-tecnologias thead tr {
+    background: linear-gradient(135deg, #302b63 0%, #24243e 100%);
+}
+
+.tabla-tecnologias th {
+    text-align: left;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #c9a0ff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid rgba(201, 160, 255, 0.2);
+}
+
+.tabla-tecnologias td {
+    padding: 14px 24px;
+    font-size: 15px;
+    color: #d4d4e8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background 0.25s ease;
+}
+
+.tabla-tecnologias tbody tr:hover {
+    background: rgba(201, 160, 255, 0.06);
+}
+
+.tabla-tecnologias tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.barra-nivel {
+    width: 100%;
+    max-width: 200px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.barra-nivel-relleno {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+    position: relative;
+}
+
+.barra-avanzado {
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+    box-shadow: 0 0 12px rgba(0, 201, 255, 0.4);
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.tarjeta-competencias,
+.tarjeta-ruta {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 28px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-competencias:hover,
+.tarjeta-ruta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.tarjeta-titulo {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(201, 160, 255, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-competencias {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-competencias li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c0c0d8;
+    padding: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: color 0.2s ease;
+}
+
+.lista-competencias li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-size: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lista-competencias li:last-child {
+    border-bottom: none;
+}
+
+.lista-competencias li:hover {
+    color: #ffffff;
+}
+
+.lista-ruta {
+    padding: 0;
+    padding-left: 22px;
+    counter-reset: ruta-counter;
+    list-style: none;
+}
+
+.lista-ruta li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c0c0d8;
+    padding: 10px 0;
+    padding-left: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    counter-increment: ruta-counter;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.lista-ruta li::before {
+    content: counter(ruta-counter) ".";
+    position: absolute;
+    left: -22px;
+    font-weight: 700;
+    color: #c9a0ff;
+    font-size: 14px;
+}
+
+.lista-ruta li:last-child {
+    border-bottom: none;
+}
+
+.lista-ruta li:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .seccion-habilidades {
+        padding: 50px 24px 40px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .tabla-tecnologias th,
+    .tabla-tecnologias td {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .habilidades-titulo {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-habilidades {
+        padding: 36px 16px 30px;
+    }
+
+    .habilidades-titulo {
+        font-size: 24px;
+    }
+
+    .tarjeta-competencias,
+    .tarjeta-ruta {
+        padding: 22px 18px;
+    }
+
+    .barra-nivel {
+        max-width: 120px;
+    }
+}
