@@ -220,6 +220,67 @@
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .navlinks {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navlinks a {
+        font-size: 14px;
+    }
+
+    .cuerpo {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 24px;
+        gap: 24px;
+    }
+
+    .contenido {
+        max-width: 100%;
+    }
+
+    .saludo {
+        font-size: 26px;
+    }
+
+    .subtitulo {
+        font-size: 14px;
+    }
+
+    .descripcion {
+        font-size: 13px;
+        max-width: 100%;
+    }
+
+    .imagen-container {
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
+    }
+
+    .sobre-mi {
+        padding: 40px 24px;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column;
+    }
+
+    .datos-personales {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
 /* tablas y graficos */
 .seccion-habilidades {
     padding: 70px 50px 60px;
