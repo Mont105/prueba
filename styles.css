@@ -220,6 +220,11 @@
     font-weight: 700;
 }
 
+.datos-lista li span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
