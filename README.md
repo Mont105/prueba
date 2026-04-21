@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Portafolio profesional de Victor Muñoz, estudiante de 21 años de ciberseguridad y electricista de Concepción (Chile).
+Portafolio profesional de Victor Muñoz, estudiante de 21 años de la carrera ciberseguridad y egresado electricidad de Concepción (Chile).
 El sitio web muestra sus habilidades técnicas, proyectos enfocados en seguridad, certificaciones y experiencia profesional.
 
 El portafolio incluye secciones como:
